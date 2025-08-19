@@ -1,15 +1,27 @@
 body{
     display: block;
-    margin-left: 400px;
     background-color: yellow;
 }
-p, li{
+p.centraliza{
     color: black;
+    text-align: center;
 }
-h1{
+#lhamas{
     color: rgb(172, 153, 253);
 }
 
 li{
     color: blueviolet;
+}
+section{
+    background-color: bisque;
+    border-radius: 30%;
+    
+}
+#banana{
+    background-color: green;
+}
+.grew{
+    background-color: blue;
+    margin-right: 100px;
 }
