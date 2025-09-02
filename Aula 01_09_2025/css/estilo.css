@@ -1,0 +1,40 @@
+/*seletor de Id*/
+body{
+    background-color: rgb(201, 201, 201);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 30% ;
+    border-style: hidden;
+}
+/* seletor de classe */
+.central{
+    text-align: center;
+}
+.item-menu{
+    display: inline;
+    margin: 0.9rem;
+    border-radius: 10%;
+    background-color: darkgrey;
+    padding: 0.7rem;
+    padding-right: 1rem;
+    border-right-style: outset;
+    border-color: lightgreen;
+}
+.item-menu:hover{
+    background-color: blueviolet;
+}
+
+
+.item-menu a:hover{
+    color: mediumpurple;
+    text-decoration: none;
+}
+.menu{
+    background-color: antiquewhite;
+    padding: 0.7rem;
+}
+.sec1{
+text-align: center;
+}
+td{
+    padding: 0.4rem;
+}
