@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo - Gustavo Lira de Oliveira</title>
+</head>
+<body>
+    <header>
+        <h1>Gustavo Lira de Oliveira</h1>
+        <p>Aluno da Positivo | Contato: gustavo.lirade.oliveira1@gmail.com | Telefone: (43) 98863-0234</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="foto">
+                <img src="Foto Perfil.jpeg" alt="Foto profissional de Gustavo Luiura de Oliveira, homem de 19 anos com sorriso amigável, vestindo camisa azul, fundo neutro em Sala de Aula" />
+            </div>
+            <p>Sou um aluno da Positivo que esta em busca de conhecimento e experiencia na area tendo apenas o conhecimento Tecnico. Sempre busco aprimorar meus conhecimentos e contribuir para projetos inovadores.</p>
+        </section>
+        
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Empresa</th>
+                        <th>Período</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                    </tr>
+                    <tr>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                    </tr>
+                    <tr>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="educacao">
+            <h2>Educação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grau</th>
+                        <th>Instituição</th>
+                        <th>Ano de Conclusão</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cursando Ensino Superior</td>
+                        <td>Universidade de Londrina - UP</td>
+                        <td>2025 - 2027</td>
+                        <td>Desenvolvimento web, pensamento comp, cultura star tup, Linguagem C, phithon.</td>
+                    </tr>
+                    <tr>
+                        <td>Ensino Medio Completo - Tec em ADS</td>
+                        <td>Colégio Estadual Antônio de Moraes Barros</td>
+                        <td>2024</td>
+                        <td>Aula focadas em desenvimento web, Back-End, Front-End e Lua </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><strong>Tecnologias Front-End:</strong> HTML5, CSS3, JavaScript.</li>
+                <li><strong>Tecnologias Back-End:</strong> Node.js, Python , PHP, SQL (MySQL)</li>
+                <li><strong>Ferramentas:</strong>  VS Code, Figma</li>
+                <li><strong>Soft Skills:</strong> Trabalho em equipe, comunicação eficaz, aprendizado contínuo</li>
+                <li><strong>Idiomas:</strong> Português (nativo), Inglês (Tecnico).</li>
+            </ul>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <ul>
+                <li><strong>E-mail:</strong> gustavo.lirade.oliveira1@gmail.com</li>
+                <li><strong>Telefone:</strong> (43) 98863-0234</li>
+                <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/gustavo-lira-16535530b/</li>
+                <li><strong>GitHub:</strong> https://github.com/gustavoliradeoliveira</li>
+                <li><strong>Endereço:</strong> Londrina, PR, Brasil</li>
+            </ul>
+        </section>
+    
+    <footer>
+        <p>&copy; 2025 Gustavo Lira de Oliveira. Todos os direitos reservados.</p>
+    </footer>
+
+     <script>
+        // JavaScript feito pelo chat gpt para scrolar no menu
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação simples ao carregar seções
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(section);
+        });
+    </script> 
+    
+</body>
+</html>
+</content>
+</create_file>
+
