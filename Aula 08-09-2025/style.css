@@ -1,0 +1,11 @@
+body{
+    background-color: blueviolet;
+}
+.cabecalho{
+    text-align: center;
+}
+#forms{
+    text-align: center;
+    
+    background-color: lightgray;
+}
